@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
 }
 .container .content .left-side .logo img{
     padding: 10px 0 0 20px ;
@@ -32,7 +32,7 @@ body {
     margin-top: 10px;
     margin-bottom: -10px;
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 .container .content .left-side .menu ul {
@@ -42,7 +42,7 @@ body {
 }
 .container .content .left-side .menu ul a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
 }
 .container .content .left-side .menu ul i {
@@ -95,7 +95,7 @@ body {
     margin-left: 40px;
     margin-right: 40px;
     overflow-y: auto ;
-    height: calc(100vh - 50px - 70px);
+    height: calc(100vh - 70px - 70px);
 }
 .container .content .right-side .icon {
     width: calc(100% - 20px);
@@ -156,10 +156,16 @@ body {
     color: rgb(138, 133, 133);
     font-size: 18px;
 }
-.container .content .right-side .artists .populars h1 {
+.container .content .right-side .artists .populars {
+    display: flex;
+
+}
+.container .content .right-side .artists .popular-content h1 {
     color: black;
     font-size: 30px;
-}
+    margin: 20px;
+}   
+
 .container .content .right-side .artists .populars .popular img{
     width: 250px;
     height: 300px;
@@ -172,26 +178,111 @@ body {
     border: 1px solid #ccc;
 }
 .container .content .right-side .artists .populars .popular p {
-    height: 70px;
+    height: 80px;
     width: 250px;
     margin: 20px;
-    margin-top: -90px;
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid transparent;
     border-radius: 0 0 10px 10px;
     backdrop-filter: blur(5px);
     color: white;
     font-size: 20px;
 }
 .container .content .right-side .artists .populars .popular p span {
-    color: rgb(138, 133, 133);
+    color: rgb(69, 92, 136);
     font-size: 18px;
 }
 
 
 .container .footer {
-    height: 50px;
-    background-color: black;
+    width: 100%;
+    height: 70px;
+    background: rgb(72, 84, 124);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.container .footer .song {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+.container .footer .song .img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.container .footer .song img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 50px;
+
+}
+.container .footer .song p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+.container .footer .song p span {
+    color: #ccc;
+    font-size: 16px;
+}
+.container .footer .song .icons {
+    color: white;
+    font-size: 30px;
+    font-weight: thin;
+    display: flex;
+    gap: 100px;
+    height: 50px;
+    
+}
+.container .footer .song .icons  ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 0 15px;
+}
+.container .footer .song .icons  ul a {
+    color: white;
+}
+.container .footer .song .icons  ul audio source{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+   background: #555;
+  }
